@@ -98,6 +98,13 @@ public class BankAccountTest {
         assertEquals("WITHDRAWAL", account.getTransactions().get(1).getType());
     }
 
+    @Test
+    @DisplayName("Should handle decimal amounts correctly")
+    void testDecimalAmounts() {
+        account.deposit(new BigDecimal("123.45"));
+        assertEquals(new BigDecimal("1123.45"), account.getBalance());
+    }
+
     @Nested
     @DisplayName("Edge Cases")
     class EdgeCaseTests {
