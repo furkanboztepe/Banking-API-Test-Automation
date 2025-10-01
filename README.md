@@ -96,7 +96,3 @@ Pipeline otomatik çalışır:
 2. Testi boz ve fail durumunu gör
 3. Coverage'ı düşür ve uyarıyı gör
 4. Yeni feature ekle (TDD)
-
----
-
-Hazırlayan: Junior Test Automation Engineer için hazırlanmıştır.
